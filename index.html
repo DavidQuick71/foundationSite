@@ -4,161 +4,319 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Home: Hotel &amp; Spa</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation-icons.css">
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
+
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
+          <h3 class="text-center">Navigation</h3>
+          <ul class="menu vertical" data-drilldown>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li class="has-submenu is-drilldown-submenu-parent"><a href="rooms.html">Rooms</a>
+              <ul class="menu vertical">
+                <li><a href="room-01.html">Room 01</a></li>
+                <li><a href="room-02.html">Room 02</a></li>
+                <li><a href="room-03.html">Room 03</a></li>
+                <li><a href="room-04.html">Room 04</a></li>
+                <li><a href="room-05.html">Room 05</a></li>
+                <li><a href="room-06.html">Room 06</a></li>
+              </ul></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+
+          </ul>
+
+      </div><!-- off-canvas -->
+
+    <div class="off-canvas-content" data-off-canvas-content>
     
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
+    <section class="promo-video">
+      <div id="overlay"></div>
+      <video id="video" autoplay loop>
+        <source src="assets/videos/videobg.mp4" type="video/mp4">
+        <source src="assets/videos/videobg.webm" type="video/webm">
+        <source src="assets/videos/videobg.ogv" type="video/ogv">
+      </video>
+      
+      <div class="headliner">
+        <div class="column row">
+          <h1 class="text-center">Passion for Excellence</h1>
+        </div>
+      </div><!-- headliner -->
+
+      <div class="header-content">
+        <div class="row">
+          <div class="small-8 medium-4 columns">
+            <img src="assets/images/logo.svg">
           </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+
+          <div class="small-4 medium-4 columns">
+            <a class="menu-icon float-right" data-open="mainMenu"></a>
+          </div>  
+        </div>
+      </div><!-- header-content -->
+
+    </section>
+
+    <section class="rooms row">
+      <h2>Our rooms</h2>
+
+ <div class="medium-4 columns">
+        <a href="room-01.html" title="Room 01">
+          <div class="room-image">
+            <img src="assets/images/rooms/room-01.jpg">
+            <div class="room-title">
+              <h3>Room 01</h3>
+            </div><!-- room-title -->
+          </div><!-- room-image -->
+          <div class="room-content">
+            <p>Fusce convallis diam vitae bibendum molestie. Sed turpis urna, egestas ultrices nunc vitae, blandit tempor lacus.
+            </p>
+          </div><!-- room-content -->
+        </a>
+      </div><!-- medium-4 -->
+
+      <div class="medium-4 columns">
+        <a href="room-02.html" title="Room 02">
+          <div class="room-image">
+            <img src="assets/images/rooms/room-02.jpg">
+            <div class="room-title">
+              <h3>Room 02</h3>
+            </div><!-- room-title -->
+          </div><!-- room-image -->
+          <div class="room-content">
+            <p>Fusce convallis diam vitae bibendum molestie. Sed turpis urna, egestas ultrices nunc vitae, blandit tempor lacus. 
+            </p>
+          </div><!-- room-content -->
+        </a>
+      </div><!-- medium-4 -->
+
+      <div class="medium-4 columns">
+        <a href="room-03.html" title="Room 03">
+          <div class="room-image">
+            <img src="assets/images/rooms/room-03.jpg">
+            <div class="room-title">
+              <h3>Room 03</h3>
+            </div><!-- room-title -->
+          </div><!-- room-image -->
+          <div class="room-content">
+            <p>Fusce convallis diam vitae bibendum molestie. Sed turpis urna, egestas ultrices nunc vitae, blandit tempor lacus. 
+            </p>
+          </div><!-- room-content -->
+        </a>
+      </div><!-- medium-4 -->      
+
+    </section>
+
+    <div class="row columns">
+      <a class="button float-right">View All</a>
+    </div>
+
+    <!-- Separator Image -->
+    <div class="separator-image pool-image"></div>
+
+
+    <!-- About Us Gallery -->
+    <section class="about-us-gallery">
+      
+    <div class="medium-6 columns empty"></div>
+    <div class="medium-6 columns empty bluebg"></div>
+
+    <div class="content-about-us">
+      <div class="row">
+        <div class="medium-6 columns">
+          <h2>About Us</h2>
+          <p>Fusce convallis diam vitae bibendum molestie. Sed turpis urna, egestas ultrices nunc vitae, blandit tempor lacus.</p>
+          <p> Morbi ultricies porta massa, sit amet tincidunt est pulvinar a. Nunc sed accumsan nisi. Nullam ac posuere quam. Mauris sed luctus sapien. Donec eu quam nec nunc semper sagittis. Donec quis pharetra justo, vitae iaculis arcu.</p>
+        </div>
+
+        <!-- Modal -->
+
+        <div class="reveal" id="galleryModal" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+          <img src="" id="imageContainer">
+          <button class="close-button" data-close aria-label="close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <!-- Modal Ends -->
+
+        <div id="gallery" class="medium-6 columns bluebg">
+          <h2 class="white">Gallery</h2>
+
+          <div class="row small-up-3 medium-up-3 large-up-3">
+            <div class="column">
+              <a data-open="galleryModal">
+                <img class="thumbnail" src="assets/images/gallery/thumbnail/image01.jpg">
+              </a>
             </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
+            <div class="column">
+              <a data-open="galleryModal">
+                <img class="thumbnail" src="assets/images/gallery/thumbnail/image02.jpg">
+              </a>
+            </div>
+            <div class="column">
+              <a data-open="galleryModal">
+                <img class="thumbnail" src="assets/images/gallery/thumbnail/image03.jpg">
+              </a>  
+            </div>
+            <div class="column">
+              <a data-open="galleryModal">
+                <img class="thumbnail" src="assets/images/gallery/thumbnail/image04.jpg">
+              </a>  
+            </div>
+            <div class="column">
+              <a data-open="galleryModal">
+                <img class="thumbnail" src="assets/images/gallery/thumbnail/image05.jpg">
+              </a>  
+            </div>
+            <div class="column">
+              <a data-open="galleryModal">
+                <img class="thumbnail" src="assets/images/gallery/thumbnail/image06.jpg">
+              </a>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+    </section>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
+        <!-- Separator Image -->
+    <div class="separator-image bar-image"></div>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>       
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>           
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
+    <!-- Booking Section -->
+
+    <section class="booking row">
+      
+      <div class="large-8 large-centered columns text-center">
+        <h2>Book Now</h2>
+        <p>Fusce convallis diam vitae bibendum molestie. Sed turpis urna, egestas ultrices nunc vitae, blandit tempor lacus. Morbi ultricies porta massa, sit amet tincidunt est pulvinar a. Nunc sed accumsan nisi. Nullam ac posuere quam. Mauris sed luctus sapien.
+        </p>
+        <a data-open="modalBook" class="button">Book Now</a>
       </div>
+
+    
+
+    <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+      <h2 class="booking-form text-center">Booking Form</h2>
+
+      <form data-abide novalidate>
+
+        <div class="alert callout" style="display:none;" data-abide-error>
+            <p><i class="fi-alert"></i> There are some problems in your form!</p>
+
+        </div>
+
+        <div class="row columns">
+          <label>Name:
+            <input type="text" placeholder="Your Name" required>
+            <span class="form-error">
+              <i class="fi-alert"></i> The name field is mandatory!!
+            </span>
+          </label>
+        </div>
+
+        <div class="row columns">
+          <label>Email:
+            <input type="text" placeholder="Your Email" required pattern="email">
+            <span class="form-error">
+              <i class="fi-alert"></i> The email field is mandatory!!
+            </span>
+          </label>
+        </div>
+
+        <div class="row columns">
+          <label>Phone Number:
+            <input type="tel" placeholder="Your Number" required>
+            <span class="form-error">
+              <i class="fi-alert"></i> The phone field is mandatory!!
+            </span>
+          </label>
+        </div>
+
+        <div class="row columns">
+          <label>Message:
+            <textarea placeholder="Your Message"></textarea>
+          </label>
+        </div>
+
+        <div class="row columns">
+            <input type="submit" class="button" value="Submit">
+            <button class="button success" type="reset" value="Reset">Reset</button>
+        </div>
+
+          <button class="close-button" data-close aria-label="close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+      </form>
+
+
     </div>
+
+    </section>
+
+    <footer>
+      
+      <div class="row">
+
+        <nav class="large-5 columns">
+          <ul class="vertical menu large-horizontal">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="contact-information large-3 columns">
+          <ul class="vertical no-bullet">
+            <li><i class="fi-marker"></i> 842 State Street East New Albany, IN 47150</li>
+            <li><i class="fi-telephone"></i> 1-800-90-80880</li>
+            <li><i class="fi-mail"></i> contact@email.com</li>
+          </ul>
+        </div>  
+
+        <div class="about-us large-4 columns">
+          <h4>About Us</h4>
+          <p>Fusce convallis diam vitae bibendum molestie. Sed turpis urna, egestas ultrices nunc vitae, blandit tempor lacus. Morbi ultricies porta massa, sit amet tincidunt est pulvinar a. Nunc sed accumsan nisi.
+          </p>
+
+          <ul class="menu social align-right">
+            <li><a href="http://www.twitter.com"><i class="fi-social-twitter"></i></a>
+            </li>
+            <li><a href="http://www.facebook.com"><i class="fi-social-facebook"></i></a>
+            </li>            
+          </ul>
+
+
+        </div>  
+
+
+
+      </div><!-- row -->  
+
+
+      <p class="text-center copyright">All Rights Reserved Hotel &amp; Spa 2015.</p>
+
+
+    </footer>
+
+    </div><!-- off-canvas-content -->
+
+    </div><!-- off-canvas-wrapper-inner -->
+
+    </div><!-- off-canvas-wrapper -->
+
+
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
